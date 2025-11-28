@@ -13,7 +13,7 @@ body {
 }
 
 .page {
-  min-inline-size: 320px;
+  min-inline-size: 320px; 
   min-block-size: 100vh;
 }
 
