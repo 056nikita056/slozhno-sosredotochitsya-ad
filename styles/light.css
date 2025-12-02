@@ -1,48 +1,55 @@
 :root.theme-light {
-  --bg-color: #fff1f7;
+  --bg-image: url(../images/cover-image-light.png);
+  --bg-color: #FFF1F7;
+  --title-text-color: #353430;
   --accent-color: #353430;
-  --text-color: #353430;
-  --title-color: #ffc2e6;
-  --title-shadow-color: #ff8dcb;
-  --decor-title-bg: #ff8dcb;
-  --menu-button-hover: rgba(50, 49, 45, 0.4);
-  --page-bg-image: url("../images/cover-image-light.png");
+  --text-color: #353430;  
+  --title-color: #FFC2E6;
+  --shadow-header-color: #FF8DCB;
+  --shadow-footer-color: #FF0070;
+  --title-decor-color: #FF8DCB;
+  --outline-hover-color: rgba(50, 49, 45, 0.4);
 }
 
-.theme-light .rec {
+:root.theme-light .header__theme-menu-button_type_dark {
+  outline: none;
+}
+
+:root.theme-light .header__theme-menu-button_type_auto {
+  outline: none;
+}
+
+:root.theme-light .header__theme-menu-button_type_light {
+  outline: 1px solid var(--accent-color);
+}
+
+:root.theme-light .rec-label {
   display: none;
 }
 
 @media (prefers-color-scheme: light) {
-  :root.theme-auto {
-    --bg-color: #fff1f7;
+  :root {
+    --bg-image: url(../images/cover-image-light.png);
+    --bg-color: #FFF1F7;
+    --title-text-color: #353430;
     --accent-color: #353430;
-    --text-color: #353430;
-    --title-color: #ffc2e6;
-    --title-shadow-color: #ff8dcb;
-    --decor-title-bg: #ff8dcb;
-    --menu-button-hover: rgba(50, 49, 45, 0.4);
-    --page-bg-image: url("../images/cover-image-light.png");
+    --text-color: #353430;  
+    --title-color: #FFC2E6;
+    --shadow-header-color: #FF8DCB;
+    --shadow-footer-color: #FF0070;
+    --title-decor-color: #FF8DCB;
+    --outline-hover-color: rgba(50, 49, 45, 0.4);
+  }
+  
+  .header__theme-menu-button_type_dark {
+    outline: none;
   }
 
-  .theme-auto .rec {
+  .header__theme-menu-button_type_auto {
+    outline: 1px solid var(--accent-color);
+  }
+
+  .rec-label {
     display: none;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  :root.theme-auto {
-    --bg-color: #000028;
-    --accent-color: #ff0070;
-    --text-color: #f1b2ce;
-    --title-color: #db00ff;
-    --title-shadow-color: #ff0070;
-    --decor-title-bg: #ff0070;
-    --menu-button-hover: rgba(255, 0, 112, 0.4);
-    --page-bg-image: url("../images/cover-image-dark.png");
-  }
-
-  .theme-auto .rec {
-    display: inline-flex;
   }
 }
