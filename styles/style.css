@@ -238,6 +238,58 @@
 
 }
 
+.theme-dark .header__theme-menu-button_type_light {
+  outline: none;
+}
+
+.theme-dark .header__theme-menu-button_type_dark {
+  outline: 1px solid var(--accent-color);
+}
+
+.theme-dark .header__theme-menu-button_type_auto {
+  outline: none;
+}
+
+.theme-dark .rec-label {
+  display: flex;
+}
+
+.theme-light .header__theme-menu-button_type_dark {
+  outline: none;
+}
+
+.theme-light .header__theme-menu-button_type_auto {
+  outline: none;
+}
+
+.theme-light .header__theme-menu-button_type_light {
+  outline: 1px solid var(--accent-color);
+}
+
+.theme-light .rec-label {
+  display: none;
+}
+
+@media (prefers-color-scheme: light) {
+  .theme-auto .header__theme-menu-button_type_dark {
+    outline: none;
+  }
+
+  .theme-auto .header__theme-menu-button_type_auto {
+    outline: 1px solid var(--accent-color);
+  }
+
+  .theme-auto .rec-label {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .theme-auto .rec-label {
+    display: flex;
+  }
+}
+
 @media (width >= 768px) {
   :root {
     --padding: 20px;
